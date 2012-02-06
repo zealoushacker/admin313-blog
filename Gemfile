@@ -17,11 +17,18 @@ group :assets do
 end
 
 gem 'haml'
-gem 'haml-rails', group: :development
+
+group :development do
+  gem 'haml-rails'
+  gem 'therubyracer'
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'cucumber-rails'
   gem 'capybara'
