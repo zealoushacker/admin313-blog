@@ -20,7 +20,6 @@ gem 'haml'
 
 group :development do
   gem 'haml-rails'
-  gem 'therubyracer'
 end
 
 group :test, :development do
